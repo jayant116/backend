@@ -3,6 +3,10 @@ const app = express()
 
 require('dotenv').config()
 
+const data={
+   1:'jay'
+}
+
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
@@ -10,6 +14,10 @@ app.get('/', (req, res) => {
 
 app.get('/twitter',(req,res)=>{
    res.send('jayant.com');
+})
+
+app.get('/github',(req,res)=>{
+    res.json(data)
 })
 
 app.get('/@also',(req,res)=>{
