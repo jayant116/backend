@@ -4,7 +4,8 @@ const app = express()
 require('dotenv').config()
 
 const data={
-   1:'jay'
+   1:'jay',
+   2:'raj'
 }
 
 
